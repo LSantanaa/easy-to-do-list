@@ -1,0 +1,28 @@
+.dark-theme {
+  --bg-color: #1a1717;
+  --color-content: #f3f3f3;
+  --bg-header_task: #2a2a2a;
+  --input_color: #151313;
+  --color_h2:  #a5d2a9;
+  --color_p:  #868e86;
+  --hover:  #9f9e9e;
+
+}
+
+.light-theme {
+  --bg-color: #f3f3f3;
+  --color-content: #2a2a2a;
+  --bg-header_task: #9f9e9e;
+  --input_color: #7a7676;
+  --color_h2:  #4f8e54;
+  --color_p:  #5e625e;
+  --hover:  #e9e3e3;
+}
+$white: #fff;
+$green-md: #23912c;
+$green-light: #1fb85a;
+$green-gray: #234a2b;
+$black: #1a1717;
+
+$red: red;
+$red-light: rgb(170, 62, 62);

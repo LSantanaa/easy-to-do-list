@@ -1,0 +1,95 @@
+p{
+  color: var(--color_p);
+  margin-top: 10px;
+}
+h1, h2, h3, h4, h5, h6{
+  color: var(--color-content);
+}
+h1{
+  margin: 10px 0px 5px;
+  padding-top: 20px;
+}
+h2{
+  font-size: 22px;
+  color: var(--color_h2);
+}
+h3{
+  margin-top: 16px;
+  color:var(--color-content);
+}
+.text-center{
+  text-align: center;
+}
+a{
+  display: inline-flex;
+  justify-content: center;
+  text-decoration: none;
+  margin-left: 48px;
+  color: var(--color-content);
+  position: relative;
+  transition: all 0.3s ease;
+  
+  &::before{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 5px;
+    width: 0%;
+    border-radius: 5px;
+    background-color: $green-md;
+    transition: all 0.3s ease;
+  }
+  &:hover{
+    color: var(--hover);
+    &::before{
+      width: 100%;
+      transform-origin: center;
+    }  
+  }
+}
+.links a{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  img{
+    margin-right: 2px;
+  }
+}
+.btn{
+  padding: 10px;
+  border: 0;
+  border-radius: 4px;
+  color: $white;
+  background-color: $green-light;
+  transition: .5s ease;
+  cursor: pointer;
+  &:hover{
+      background-color: $green-md;
+      transform: scale(0.95);
+  }
+}
+.task-item .btn{
+  margin-right: 10px;
+  width: 65px;
+}
+.del{
+  background-color: $red-light;
+  &:hover{
+    background-color: $red;
+  }
+}
+.edit:disabled{
+  background-color: $green-gray;
+  transform: none;
+}
+
+.clearAll{
+  margin-left: 35px;
+  background-color: $red-light;
+  &:hover{
+    background-color: $red;
+  }
+}
+#yourTask h3{
+  margin-top: 0;
+}

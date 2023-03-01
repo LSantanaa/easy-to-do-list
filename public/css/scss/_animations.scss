@@ -1,0 +1,37 @@
+//animation_logo
+#ls{
+  animation: ls 5s ease infinite alternate;
+}
+@keyframes ls{
+  0%{
+      fill-opacity: 0;
+      stroke-dasharray: 1 1000;
+      stroke-dashoffset: 0;
+      stroke-width: 0;
+      opacity: 1;
+  }
+  30%{
+      fill-opacity: 0;
+      stroke-dasharray: 150 0;
+      stroke-dashoffset: 0;
+      stroke-width: 1;
+      opacity: 1;
+      
+  }
+  60%,90%{
+      fill-opacity: 1;
+      stroke-dasharray: 150 0;
+      stroke-dashoffset: 0;
+      stroke-width: 0;
+      opacity: 1;
+      
+  }
+  100%{
+      fill-opacity: 1;
+      stroke-dasharray: 150 0;
+      stroke-dashoffset: 0;
+      stroke-width: 1;
+      opacity: 1;
+  }
+}
+
