@@ -319,7 +319,7 @@ input[type=text] {
 }
 
 input[type=checkbox]:checked + .check {
-  background: url("/public/svg/check.svg") #23912c;
+  background: url("./public/svg/check.svg") #23912c;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
