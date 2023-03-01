@@ -301,7 +301,7 @@ input[type=text] {
   height: 36px;
 }
 .task-area input[type=checkbox]:hover + .check {
-  background: url("../../svg/check.svg") #23912c;
+  background: url("../svg/check.svg") #23912c;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -319,7 +319,7 @@ input[type=text] {
 }
 
 input[type=checkbox]:checked + .check {
-  background: url("../../svg/check.svg") #23912c;
+  background: url("../svg/check.svg") #23912c;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
