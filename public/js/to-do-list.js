@@ -59,18 +59,16 @@ function render(){
 
       // Libera o campo para edição da tarefa
       btnEdit.addEventListener('click', liberaCampo);
+      
       function liberaCampo(e){
         inputTextTask.removeAttribute('disabled');
         inputTextTask.focus();
-      }
-
-      //bloqueia edição de tarefas
-      document.addEventListener('click', bloqEdit);
-      function bloqEdit(e){
-        if(e.target != btnEdit){
-          if(e.target != inputTextTask)
+      
+        inputTextTask.addEventListener('blur', (e) => {
           inputTextTask.setAttribute('disabled', 'disabled');
-        }
+          taskAtual[index].text = inputTextTask.value;
+          saveTasksToStorage();
+        });
       }
 
       function toggleDisable(){
