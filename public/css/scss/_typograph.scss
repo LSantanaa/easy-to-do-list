@@ -20,15 +20,15 @@ h3{
 .text-center{
   text-align: center;
 }
-a{
+a:not(a.linkLogo){
   display: inline-flex;
   justify-content: center;
   text-decoration: none;
   margin-left: 48px;
   color: var(--color-content);
   position: relative;
-  transition: all 0.3s ease;
   
+
   &::before{
     content: "";
     position: absolute;
@@ -39,7 +39,7 @@ a{
     background-color: $green-md;
     transition: all 0.3s ease;
   }
-  &:hover{
+  &:hover, &.link_active{
     color: var(--hover);
     &::before{
       width: 100%;
@@ -47,6 +47,7 @@ a{
     }  
   }
 }
+
 .links a{
   display: inline-flex;
   justify-content: center;
@@ -92,4 +93,24 @@ a{
 }
 #yourTask h3{
   margin-top: 0;
+}
+
+@media (max-width: 842px){
+  p{
+   font-size: small;
+  }
+  h1{
+    font-size: 20px;
+  }
+  h2{
+    font-size: 18px;
+  }
+  h3{
+    font-size: 16px;
+  }
+
+  .btn{
+    font-size: 10px;
+    margin-right: 10px;
+  }
 }

@@ -66,16 +66,15 @@ h3 {
   text-align: center;
 }
 
-a {
+a:not(a.linkLogo) {
   display: inline-flex;
   justify-content: center;
   text-decoration: none;
   margin-left: 48px;
   color: var(--color-content);
   position: relative;
-  transition: all 0.3s ease;
 }
-a::before {
+a:not(a.linkLogo)::before {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -85,10 +84,10 @@ a::before {
   background-color: #23912c;
   transition: all 0.3s ease;
 }
-a:hover {
+a:not(a.linkLogo):hover, a:not(a.linkLogo).link_active {
   color: var(--hover);
 }
-a:hover::before {
+a:not(a.linkLogo):hover::before, a:not(a.linkLogo).link_active::before {
   width: 100%;
   transform-origin: center;
 }
@@ -145,7 +144,25 @@ a:hover::before {
   margin-top: 0;
 }
 
-main {
+@media (max-width: 842px) {
+  p {
+    font-size: small;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  .btn {
+    font-size: 10px;
+    margin-right: 10px;
+  }
+}
+main, #sobre {
   max-width: 800px;
 }
 
@@ -179,6 +196,10 @@ main {
 
 .d-none {
   display: none;
+}
+
+.active {
+  display: block;
 }
 
 .nav {
@@ -348,6 +369,16 @@ footer {
   margin-top: 10px;
 }
 
+@media (max-width: 842px) {
+  .logo {
+    overflow-y: visible;
+    width: 150px;
+    padding: 0;
+  }
+  main {
+    padding: 15px;
+  }
+}
 /* Estilo para o modal de confirmação */
 .modal {
   display: none;
