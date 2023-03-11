@@ -34,4 +34,32 @@
       opacity: 1;
   }
 }
+#main.active{
+  animation: showSectionLeft 1s forwards;
+}
+#sobre.active, #contato.active{
+  animation: showSection 1s forwards;
+}
 
+// animação de exibir seções
+@keyframes showSection {
+  0%{
+    opacity: 0;
+    transform: translate3d(-40px, 0, 0);
+  }
+  100%{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes showSectionLeft {
+  0%{
+    opacity: 0;
+    transform: translate3d(40px, 0, 0);
+  }
+  100%{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

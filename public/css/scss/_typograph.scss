@@ -53,7 +53,7 @@ a:not(a.linkLogo){
   justify-content: center;
   align-items: center;
   img{
-    margin-right: 2px;
+    margin-right: 4px;
   }
 }
 .btn{
@@ -96,21 +96,5 @@ a:not(a.linkLogo){
 }
 
 @media (max-width: 842px){
-  p{
-   font-size: small;
-  }
-  h1{
-    font-size: 20px;
-  }
-  h2{
-    font-size: 18px;
-  }
-  h3{
-    font-size: 16px;
-  }
-
-  .btn{
-    font-size: 10px;
-    margin-right: 10px;
-  }
+  
 }

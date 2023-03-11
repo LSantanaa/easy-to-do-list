@@ -26,6 +26,68 @@
   --hover: #e9e3e3;
 }
 
+#ls {
+  animation: ls 5s ease infinite alternate;
+}
+
+@keyframes ls {
+  0% {
+    fill-opacity: 0;
+    stroke-dasharray: 1 1000;
+    stroke-dashoffset: 0;
+    stroke-width: 0;
+    opacity: 1;
+  }
+  30% {
+    fill-opacity: 0;
+    stroke-dasharray: 150 0;
+    stroke-dashoffset: 0;
+    stroke-width: 1;
+    opacity: 1;
+  }
+  60%, 90% {
+    fill-opacity: 1;
+    stroke-dasharray: 150 0;
+    stroke-dashoffset: 0;
+    stroke-width: 0;
+    opacity: 1;
+  }
+  100% {
+    fill-opacity: 1;
+    stroke-dasharray: 150 0;
+    stroke-dashoffset: 0;
+    stroke-width: 1;
+    opacity: 1;
+  }
+}
+#main.active {
+  animation: showSectionLeft 1s forwards;
+}
+
+#sobre.active, #contato.active {
+  animation: showSection 1s forwards;
+}
+
+@keyframes showSection {
+  0% {
+    opacity: 0;
+    transform: translate3d(-40px, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes showSectionLeft {
+  0% {
+    opacity: 0;
+    transform: translate3d(40px, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
 body, html {
   height: 100%;
 }
@@ -98,7 +160,7 @@ a:not(a.linkLogo):hover::before, a:not(a.linkLogo).link_active::before {
   align-items: center;
 }
 .links a img {
-  margin-right: 2px;
+  margin-right: 4px;
 }
 
 .btn {
@@ -144,25 +206,7 @@ a:not(a.linkLogo):hover::before, a:not(a.linkLogo).link_active::before {
   margin-top: 0;
 }
 
-@media (max-width: 842px) {
-  p {
-    font-size: small;
-  }
-  h1 {
-    font-size: 20px;
-  }
-  h2 {
-    font-size: 18px;
-  }
-  h3 {
-    font-size: 16px;
-  }
-  .btn {
-    font-size: 10px;
-    margin-right: 10px;
-  }
-}
-main, #sobre {
+main, section {
   max-width: 800px;
 }
 
@@ -232,6 +276,10 @@ main, #sobre {
   width: 70px;
   height: 70px;
   filter: drop-shadow(0 0 25px #02BFC5);
+}
+
+.links {
+  margin-top: 10px;
 }
 
 .togle-theme {
@@ -357,6 +405,10 @@ input[type=checkbox]:checked ~ .task-text {
   margin-top: 15px;
 }
 
+#contato div {
+  margin-top: 50px;
+}
+
 footer {
   width: 100%;
   flex-shrink: 0;
@@ -369,16 +421,6 @@ footer {
   margin-top: 10px;
 }
 
-@media (max-width: 842px) {
-  .logo {
-    overflow-y: visible;
-    width: 150px;
-    padding: 0;
-  }
-  main {
-    padding: 15px;
-  }
-}
 /* Estilo para o modal de confirmação */
 .modal {
   display: none;
@@ -417,40 +459,42 @@ footer {
   background-color: red;
 }
 
-#ls {
-  animation: ls 5s ease infinite alternate;
-}
-
-@keyframes ls {
-  0% {
-    fill-opacity: 0;
-    stroke-dasharray: 1 1000;
-    stroke-dashoffset: 0;
-    stroke-width: 0;
-    opacity: 1;
+@media (max-width: 842px) {
+  p {
+    font-size: small;
   }
-  30% {
-    fill-opacity: 0;
-    stroke-dasharray: 150 0;
-    stroke-dashoffset: 0;
-    stroke-width: 1;
-    opacity: 1;
+  h1 {
+    font-size: 20px;
   }
-  60%, 90% {
-    fill-opacity: 1;
-    stroke-dasharray: 150 0;
-    stroke-dashoffset: 0;
-    stroke-width: 0;
-    opacity: 1;
+  h2 {
+    font-size: 18px;
   }
-  100% {
-    fill-opacity: 1;
-    stroke-dasharray: 150 0;
-    stroke-dashoffset: 0;
-    stroke-width: 1;
-    opacity: 1;
+  h3 {
+    font-size: 16px;
   }
-}
-.links {
-  margin-top: 10px;
+  .btn {
+    font-size: 10px;
+    margin-right: 10px;
+  }
+  .logo {
+    overflow-y: visible;
+    width: 150px;
+    padding: 0;
+  }
+  main, section {
+    padding: 15px;
+  }
+  section#contato a {
+    display: block;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 10px;
+    padding: 5px;
+  }
+  section#contato .text-center {
+    text-align: start;
+  }
+  footer #contato a {
+    margin-left: 0;
+  }
 }/*# sourceMappingURL=style.css.map */

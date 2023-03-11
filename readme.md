@@ -5,8 +5,9 @@
 #### Info
  * **Nome**: Easy To Do List
  * **Autor**: Leonardo de Sant Ana
- * **Versão**: 1.0
- * **Data de publicação**: 01/03/2023 
+ * **Versão**: 2.0
+ * **Data de publicação da 1° Versão**: 01/03/2023 
+ * **Data de publicação da versão atual**: 08/03/2023 
  * **Tecnologias**: Javascript, HTML, SCSS/SASS.
  * **Descrição**: Criador de tarefas simplificado para uso no dia a dia.
 
@@ -24,14 +25,16 @@
   Você pode abrir a página com as demais páginas que acessa no dia a dia, e ir adicionando e executando suas tarefas diárias, sem a necessidade de se cadastrar e se autenticar em algum banco de dados.
 
 ### Release Notes
-* adicione inúmeras tarefas e salve no seu próprio navegador
-* botões de adição, edição e exclusão de uma ou todas as tarefas
-* área de checagem para marcar a tarefa como concluída
-* dark mode e light mode
+
+--- Funcionalidades --- 
+* Adição de botão de excluir tarefas concluídas.
+* Adição de botão para marcar todas as tarefas como concluídas.
+
+--- Recursos técnicos, alterações no código --- 
+* Otimizações de código, implementação de sistema modules js
+* Inclusão da area "sobre" no mesmo arquivo index.html
 
 ### Próximas implementações
-* Adição de botão para excluir apenas tarefas finalizadas
-* Adição de um botão para marcar todas as tarefas como conclídas.
 * Integração com API's de clima e local, para ter um ambiente mais completo.
 * Adição de timer para controlar o tempo de suas tarefas e horários em que devem ser executadas.
 * Controle de datas para expiração automática e exclusão de tarefas.

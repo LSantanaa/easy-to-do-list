@@ -5,6 +5,7 @@
   font-family: 'Saira', sans-serif;
 }
 @import 'scss/colors';
+@import 'scss/animations';
 
 body,html{
   height: 100%;
@@ -19,8 +20,5 @@ header{
 @import 'scss/typograph';
 @import 'scss/layout.scss';
 @import 'scss/modal';
-@import 'scss/animations';
+@import 'scss/mobile'
 
-.links{
-  margin-top: 10px;
-}
