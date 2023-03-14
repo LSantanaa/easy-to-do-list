@@ -74,9 +74,19 @@
               <input type="text" name="task-item" id="inputTask">
               <button class="btn" id="btn">Adicionar</button>
             </form>
-            <div class="align-center d-none" id="yourTask">
+            <div class="align-center d-none flex-collumn" id="yourTask">
               <h3 class="text-center">Suas Tarefas</h3>
-              <button class="btn clearAll" id="deleteAllBtn">Excluir Tarefas</button>
+              <div class="options-area align-center">
+                <div class="checkAll">
+                  <input type="checkbox" class="checkAllTasks" id="check">
+                  <div class="check"></div>
+                  <p>Selecionar Tudo</p>
+                </div>
+                <div class="clearButtons">
+                  <button class="btn clearAll" id="deleteAllBtn">Excluir Tarefas</button>
+                  <button class="btn clearAll" id="deleteAllCheckedBtn">Excluir Concluídas</button>
+                </div>
+              </div>
             </div>
             <ul class="task-list align-center flex-collumn" id="list">
             </ul>
@@ -118,10 +128,16 @@
       <div id="confirmDeleteModal" class="modal">
         <div class="modal-content">
           <h2>Confirmar exclusão</h2>
-          <p>Deseja realmente excluir todas as tarefas?</p>
+          <p></p>
           <div class="modal-buttons">
-            <button id="cancelDeleteBtn" class="btn cancel">Cancelar</button>
-            <button id="confirmDeleteBtn" class="btn confirm">Confirmar</button>
+            <div class="btnsAll">
+              <button id="cancelDeleteBtn" class="btn cancel">Cancelar</button>
+              <button id="confirmDeleteBtn" class="btn confirm">Confirmar</button>
+            </div>
+            <div class="btnsAllChecked">
+              <button id="cancelDeleteBtnCheck" class="btn cancel">Cancelar</button>
+              <button id="confirmDeleteCheckBtn" class="btn confirm">Confirmar</button>
+            </div>
           </div>
         </div>
       </div>

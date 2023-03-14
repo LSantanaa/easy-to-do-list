@@ -67,6 +67,7 @@ export function render() {
       taskAtual.splice(index, 1);
       saveTasksToStorage();
       loadTasksFromStorage();
+      inputTask.value = "";
     }
 
     // Libera o campo para edição da tarefa

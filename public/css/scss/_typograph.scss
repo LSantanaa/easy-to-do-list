@@ -85,7 +85,7 @@ a:not(a.linkLogo){
 }
 
 .clearAll{
-  margin-left: 35px;
+  margin: 10px;
   background-color: $red-light;
   &:hover{
     background-color: $red;
@@ -93,8 +93,4 @@ a:not(a.linkLogo){
 }
 #yourTask h3{
   margin-top: 0;
-}
-
-@media (max-width: 842px){
-  
 }

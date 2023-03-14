@@ -162,6 +162,7 @@ input[type=text]{
     }
   }
 }
+
 .check{
   width: 36px;
   height: 36px;
@@ -182,6 +183,30 @@ input[type=checkbox]:checked ~ .task-text {
   text-decoration: line-through;
   background-color: $green-gray;
   color: gray;
+}
+
+#yourTask, .options-area{
+  width: 100%;
+  position: relative;
+  padding: 0 20px;
+}
+.options-area{
+  justify-content: space-between;
+}
+.checkAll, .clearButtons{
+  width: 40%;
+}
+.checkAll{
+  display: flex;
+  justify-content: flex-start;
+  .check{
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  input[type=checkbox]{
+    left: 20px;
+  }
+
 }
 
 //sobre
