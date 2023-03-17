@@ -6,7 +6,7 @@ export function menuMobile(){
     btnMobile.addEventListener("click", function () {
       btnMobile.classList.toggle("ativo");
       navContainer.classList.toggle('ativo');
-      outsideClick(btnMobile, ["touchstart", "click"], () => {
+      outsideClick(btnMobile, ['click'], () => {
         btnMobile.classList.remove("ativo");
         navContainer.classList.remove('ativo');
       }); 
