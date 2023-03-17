@@ -1,16 +1,32 @@
+@media (max-width: 980px){
+  .nav-list li.nav-item{
+    margin: 3px;
+    a{
+      margin: 3px;
+    }
+  } 
+  .logo{
+    overflow-y: visible;
+    width: 140px;
+    padding: 5px;
+  }
+  .togle-theme{
+    width: 150px;
+  }
+}
 
-@media (max-width: 842px) {
+@media (max-width: 600px) {
   p{
     font-size: small;
    }
    h1{
-     font-size: 20px;
-   }
-   h2{
      font-size: 18px;
    }
-   h3{
+   h2{
      font-size: 16px;
+   }
+   h3{
+     font-size: 14px;
    }
  
    .btn{
@@ -18,15 +34,50 @@
      margin-right: 10px;
    }
 
-
-  .logo{
-    overflow-y: visible;
-    width: 150px;
-    padding: 0;
+  //header area
+  .nav{
+    padding: 0px 30px;
   }
+  .nav.align-center{
+    justify-content: space-between;
+  }
+  li.nav-item a{
+    margin: 0;
+  }
+  .btn-mobile{
+    display: block;
+  }
+  
+  nav .nav-container{
+    display: none;
+  }
+  nav .nav-container.ativo{
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+    top: 33px;
+    right: -30px;
+    .nav-list{
+      display: flex;
+      flex-direction: column;
+      background-color: var(--bg-header_task);
+      border-radius: 10px;
+    }
+  }
+  //main,sections
   main, section{
    padding: 15px;
   }
+
+  input[type="text"]{
+    margin: 15px;
+  }
+
+  #yourTask, .options-area{
+    padding: 0 15px;
+  }
+
   section#contato {
     a{
       display: block;
@@ -38,7 +89,14 @@
       text-align: start;
     }
   }
+
+  //footer
   footer #contato a{
     margin-left: 0;
+  }
+}
+@media (max-width:400px) {
+  .clearButtons{
+    flex-direction: column;
   }
 }

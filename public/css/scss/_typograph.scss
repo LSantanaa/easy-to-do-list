@@ -28,7 +28,6 @@ a:not(a.linkLogo){
   color: var(--color-content);
   position: relative;
   
-
   &::before{
     content: "";
     position: absolute;
