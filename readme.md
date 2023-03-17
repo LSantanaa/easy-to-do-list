@@ -33,6 +33,7 @@
 --- Recursos técnicos, alterações no código --- 
 * Otimizações de código, implementação de sistema modules js
 * Inclusão da area "sobre" no mesmo arquivo index.html
+* Versão Mobile Otimizada
 
 ### Próximas implementações
 * Integração com API's de clima e local, para ter um ambiente mais completo.
