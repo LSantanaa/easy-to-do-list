@@ -56,14 +56,18 @@ export function render() {
     const btnEdit = document.createElement("button");
     const btnDel = document.createElement("button");
 
+
     btnEdit.classList.add("btn", "edit");
     btnEdit.innerText = "Editar";
+    btnEdit.addEventListener("click", liberaCampo);
+    
     btnDel.classList.add("btn", "del");
     btnDel.innerText = "Excluir";
     btnDel.addEventListener("click", deleta);
 
     //Deleta uma tarefa da lista
-    function deleta(index) {
+    function deleta() {
+      console.log(index, taskAtual)
       taskAtual.splice(index, 1);
       saveTasksToStorage();
       loadTasksFromStorage();
@@ -71,8 +75,6 @@ export function render() {
     }
 
     // Libera o campo para edição da tarefa
-    btnEdit.addEventListener("click", liberaCampo);
-
     function liberaCampo(e) {
       inputTextTask.removeAttribute("disabled");
       inputTextTask.focus();

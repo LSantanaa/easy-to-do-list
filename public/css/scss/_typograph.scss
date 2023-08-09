@@ -72,6 +72,11 @@ a:not(a.linkLogo){
   margin-right: 10px;
   width: 65px;
 }
+.btnList{
+  position: absolute;
+  margin: 0;
+  right: 200px;
+}
 .del{
   background-color: $red-light;
   &:hover{

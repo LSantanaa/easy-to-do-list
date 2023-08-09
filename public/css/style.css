@@ -182,6 +182,12 @@ a:not(a.linkLogo):hover::before, a:not(a.linkLogo).link_active::before {
   width: 65px;
 }
 
+.btnList {
+  position: absolute;
+  margin: 0;
+  right: 200px;
+}
+
 .del {
   background-color: rgb(170, 62, 62);
 }
