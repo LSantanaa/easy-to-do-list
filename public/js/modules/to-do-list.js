@@ -67,7 +67,6 @@ export function render() {
 
     //Deleta uma tarefa da lista
     function deleta() {
-      console.log(index, taskAtual)
       taskAtual.splice(index, 1);
       saveTasksToStorage();
       loadTasksFromStorage();
