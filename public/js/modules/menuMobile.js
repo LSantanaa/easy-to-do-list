@@ -7,8 +7,10 @@ export function menuMobile(){
       btnMobile.classList.toggle("ativo");
       navContainer.classList.toggle('ativo');
       outsideClick(btnMobile, ["touchstart", "click"], () => {
-        btnMobile.classList.remove("ativo");
-        navContainer.classList.remove('ativo');
-      }); 
+        setTimeout(() => {
+          btnMobile.classList.remove("ativo");
+          navContainer.classList.remove('ativo');
+        }, 300);
+      });      
     });    
 }
