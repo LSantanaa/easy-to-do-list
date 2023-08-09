@@ -7,7 +7,7 @@
  * **Autor**: Leonardo de Sant Ana
  * **Versão**: 2.0
  * **Data de publicação da 1° Versão**: 01/03/2023 
- * **Data de publicação da versão atual**: 17/03/2023 
+ * **Data de publicação da versão atual**: 08/08/2023 
  * **Tecnologias**: Javascript, HTML, SCSS/SASS.
  * **Descrição**: Criador de tarefas simplificado para uso no dia a dia.
 
